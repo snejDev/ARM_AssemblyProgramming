@@ -9,7 +9,7 @@ __main
 		bl		testB
 		ldr		r1,=3
 		
-stop 	b 		stop
+stop 		b 		stop
 		align
 
 testB	ldr 	r0,=4
