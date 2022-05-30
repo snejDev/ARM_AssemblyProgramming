@@ -1,4 +1,5 @@
 ;this program performs mul and mla operations on registers
+;mul and mla generate 32-bit results
 
 		area	data_alloc, data, readwrite
 a		space 	4
