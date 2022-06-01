@@ -9,12 +9,12 @@ __main
 		ldr 	r1, =5
 		mov 	r2, #0
 	
-loop	cmp		r0, r1
-		blt		stop
+loop		cmp	r0, r1
+		blt	stop
 		subge	r0, r0, r1
 		addge	r2, r2, #1
-		bge		loop
+		bge	loop
 		
-stop	b 		stop
+stop		b 	stop
 		align
 		end
