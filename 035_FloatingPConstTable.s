@@ -13,12 +13,12 @@ __main
 		orr 		r1, r1, #(0xF<<20)
 		str		r1, [r0]
 		
-		adrl		r0,	constant_table
-		vldr.f32	s0,[r0]
-		vldr.f32	s1,[r0,#4]
-		vadd.f32	s1,s0,s1
+		adrl		r0, constant_table
+		vldr.f32	s0, [r0]
+		vldr.f32	s1, [r0,#4]
+		vadd.f32	s1, s0,s1
 		
-stop 	b			stop
+stop 		b		stop
 		
 constant_table
 		dcd		0x3f800000	;1.000
